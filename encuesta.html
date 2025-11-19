@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d6f5e3;
+            padding: 30px;
+        }
+
+        ```
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+            animation: aparecer 1.5s ease-in-out;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        form {
+            width: 70%;
+            margin: 0 auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            animation: aparecer 1.5s ease-in-out;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 12px 22px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            button:hover {
+                background-color: #1f8c4b;
+            }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+    ```
+
+</head>
+<body>
+
+    ```
+    <h1>Formulario de Encuesta</h1>
+
+    <form id="formEncuesta">
+        <label>Gustos musicales:</label>
+        <input type="text" name="gustos_musicales">
+
+        <label>Gustos deportivos:</label>
+        <input type="text" name="gustos_deportivos">
+
+        <label>Estudios:</label>
+        <select name="estudios">
+            <option>Primaria</option>
+            <option>Secundaria</option>
+            <option>Universitario</option>
+            <option>Postgrado</option>
+        </select>
+
+        <label>Situación laboral:</label>
+        <input type="text" name="laboral">
+
+        <label>Opinión general:</label>
+        <textarea name="opinion"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <a href="index.html">Volver al inicio</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    ```
+
+</body>
+</html>
